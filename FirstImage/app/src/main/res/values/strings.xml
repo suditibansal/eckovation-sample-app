@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FirstImage</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="nameSinger">Alicia Keys</string>
+    <string name="location">San Francisco, USA</string>
+    <string name="title_activity_activity2">FirstImage</string>
+    <string name="buttonText">Click here to see the first mock page</string>
+    <string name="title_activity_current">Profile</string>
+
+</resources>

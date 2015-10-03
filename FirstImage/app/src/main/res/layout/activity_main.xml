@@ -1,0 +1,228 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context=".MainActivity"
+    android:background="#FFFFFFFF">
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/keys"
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/picture"
+        android:text="@string/nameSinger"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        android:textColor="#b2000000"
+        />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:text="@string/location"
+        android:layout_centerHorizontal="true"
+        android:textSize="12dp"
+        android:textColor="#75000000"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:layout_below="@+id/tv2"
+        android:id="@+id/lin">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+
+        <ImageButton
+            android:id="@+id/img1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/chat"
+            android:onClick="pressed"
+            android:background="@drawable/roundshape"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/img1"
+            android:textColor="#ff000000"
+            android:layout_marginTop="10dp"
+            />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp">
+
+            <ImageButton
+                android:id="@+id/img2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/gallery"
+                android:background="@drawable/roundshape"
+                android:padding="5dp"
+                android:onClick="pressed"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/img2"
+                android:textColor="#ff000000"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp">
+
+            <ImageButton
+                android:id="@+id/img3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/location"
+                android:background="@drawable/roundshape"
+                android:padding="5dp"
+                android:onClick="pressed"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/img3"
+                android:textColor="#ff000000"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/lin"
+       >
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="30dp"
+           android:layout_marginTop="30dp">
+
+           <ImageButton
+               android:id="@+id/img4"
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:src="@drawable/friends"
+               android:onClick="pressed"
+               android:background="@drawable/roundshape"
+               android:padding="5dp"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Friends"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@+id/img4"
+               android:textColor="#ff000000"
+               android:layout_marginTop="10dp"
+               />
+
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="40dp"
+           android:layout_marginTop="30dp">
+
+           <ImageButton
+               android:id="@+id/img5"
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:src="@drawable/music"
+               android:onClick="pressed"
+               android:background="@drawable/roundshape"
+               android:padding="5dp"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Music"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@+id/img5"
+               android:textColor="#ff000000"
+               android:layout_marginTop="10dp"
+               />
+
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="40dp"
+           android:layout_marginTop="30dp">
+
+           <ImageButton
+               android:id="@+id/img6"
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:src="@drawable/notif"
+               android:onClick="pressed"
+               android:background="@drawable/roundshape"
+               android:padding="5dp"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Notifications"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@+id/img6"
+               android:textColor="#ff000000"
+               android:layout_marginTop="10dp"
+               />
+
+       </RelativeLayout>
+
+
+
+   </LinearLayout>
+
+
+
+
+</RelativeLayout>
